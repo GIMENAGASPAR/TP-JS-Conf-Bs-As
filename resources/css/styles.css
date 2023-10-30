@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+/*HEADER*/
+.header-barranavegacion{
+    background-color: rgba(52,58,64,255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-navegacion{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links-navegacion{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+/*FOOTER*/
+.footer{
+    background-color: rgba(30,81,110,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-footer{
+    padding: 15px 0px;
+}
+.link-footer{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+
+/*BODY INDEX*/
+
+/*CARRUSEL*/
+
+.caja-padre{
+    position: relative;
+}
+.caja-hijo{
+    position: absolute;
+    text-align: right;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 11px;
+}
+.boton1{
+    background-color: transparent;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    border-style: ridge;
+    border-color: white;
+    border-width: 2px;
+}
+.boton2{
+    background-color:rgb(70, 189, 78);
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    border-style: none;
+}
+
+/*CAJA ORADORES*/
+.oradores-padre{
+    background-color: white;
+    padding: 10px 80px;
+}
+.oradores-titulos{
+    text-align: center;
+    padding: 25px 0px;
+}
+.row{
+    --bs-gutter-x: 0;
+}
+.oradores-img{
+    width: 100%;
+}
+.oradores-items{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(181, 178, 178);
+    margin: 14px;
+    box-sizing: border-box;
+}
+.oradores-row{
+    --bs-gutter-x: 0.2rem;
+}
+.p{
+    font-size: 11px;
+    margin: 4px;
+}
+/*FORMULARIO ORADORES*/
+.formulario{
+    background-color: white;
+    text-align: center;
+    padding: 25px 0px;
+}
+.row-formulario{
+    padding: 10px 40px;
+}
+.item-formulario{
+    padding: 0px 10px;
+}
+
+
+/*media query*/
+@media (min-width: 576px){
+    .caja-hijo{
+        font-size: 13px;
+        top: 50px;
+        right: 40px;
+    }
+}
+@media (min-width: 768px){
+    .caja-hijo{
+        font-size: 18px;
+        top: 150px;
+        right: 100px;
+    }
+    .p{
+        font-size: 14px;
+    }
+    .row-formulario{
+        padding: 10px 100px;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+    }
+}
+@media (min-width: 1100px){
+    .caja-hijo{
+        font-size: 20px;
+        top: 200px;
+        right: 100px;
+    }
+    .row-formulario{
+        padding: 10px 300px;
+    }
+    
+}
+
+/*BODY COMPRAR TICKETS*/
+.main{
+    margin: 20px 130px;
+}
+/*BLOQUE CUADRO DE TICKETS*/
+.item-ticket{
+    text-align: center;
+    padding: 20px;
+    margin: 5px 5px;
+}
+/*BLOQUES TEXTOS*/
+.h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.h3{
+    font-size: 15px;
+    font-weight: 450;
+}
+.descuento{
+    font-size: 25px;
+    font-weight: 650;
+}
+.h6{
+    color: rgba(142,143,151,255);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*SECCION VENTA DE TICKETS- FORM*/
+.venta-ticket{
+    text-align: center;
+    margin-top: 40px;
+}
+.tit-venta{
+    font-size: 12px;
+    margin: 0
+}
+.titulo-venta{
+    font-size: 26px;
+    font-weight: 500;
+}
+/*FORMULARIO*/
+
+
+.bloque-totalapagar{
+    background-color: rgba(204,229,255,255);
+    border-radius: 5px;
+    border: solid 2px rgba(187,219,255,255);
+}
+.text-totalapagar{
+    color: rgba(34,101,163,255);
+    margin: 12px;
+    font-weight:550;
+}
+.bloque-boton{
+    background-color: rgba(151,201,62,255);
+    border-radius: 5px;
+    border: solid 3px rgb(129 167 62);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight:550;
+    font-size: 18px;
+}
+.bloque-boton:hover{
+    background-color: black;
+    color: rgba(151,201,62,255);
+    border: solid 3px rgb(129 167 62)
+}
+@media (min-width: 768px){
+    .bloque-boton{
+        width: 49%;
+    }
+}
